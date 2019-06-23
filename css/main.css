@@ -5,3 +5,49 @@
     padding: 0;
     margin: 0;
 }
+
+/*HEADER*/
+.yellow-block {
+    background-color: rgba(248, 220, 2, 0.7);
+}
+.empty-yellow-block {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 10;
+}
+.line-menu ol li{
+    display: inline-block;
+
+}
+
+.block-main-img {
+    height: 700px;
+    position: absolute;
+    z-index: 20;
+}
+.main-img img {
+    height: 100% ;
+}
+.main-white-bock {
+    height: 700px;
+    width: 500px;
+    position: absolute;
+    z-index: 30;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.img-position {
+    left: 50px;
+    top: 50px;
+}
+.life {
+    padding: 10px;
+    width: 800px;
+    position: absolute;
+    z-index: 40;
+    right: 0;
+    bottom: 50px;
+}
+
+/*MAIN*/
+/*FOOTER*/
