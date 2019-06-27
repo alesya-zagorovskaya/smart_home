@@ -18,7 +18,6 @@
 }
 .line-menu ol li{
     display: inline-block;
-
 }
 .block-main-img {
     height: 700px;
@@ -26,8 +25,10 @@
     z-index: 20;
 }
 .main-img img {
-    height: 100% ;
+    height: 100%;
+    width: 100%;
 }
+
 .main-white-bock {
     height: 700px;
     width: 500px;
@@ -38,6 +39,7 @@
 .img-position {
     left: 50px;
     top: 50px;
+    right: 50px;
 }
 .life {
     padding: 10px;
