@@ -21,9 +21,23 @@ body {
     position: absolute;
     z-index: 10;
 }
+.top-block {
+    position: relative;
+}
+.line-menu {
+    position: absolute;
+    right: 0;
+    margin: 15px;
+}
 .line-menu ol li{
     display: inline-block;
     font-weight: 200;
+    padding-right: 70px;
+}
+.line-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 .block-main-img {
     height: 700px;
