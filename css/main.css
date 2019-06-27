@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+/*COMMON*/
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
 /*HEADER*/
 .yellow-block {
     background-color: rgba(248, 220, 2, 0.7);
@@ -18,6 +23,7 @@
 }
 .line-menu ol li{
     display: inline-block;
+    font-weight: 200;
 }
 .block-main-img {
     height: 700px;
@@ -28,13 +34,14 @@
     height: 100%;
     width: 100%;
 }
-
 .main-white-bock {
     height: 700px;
     width: 500px;
     position: absolute;
     z-index: 30;
     background-color: rgba(255, 255, 255, 0.4);
+    font-size: 100px;
+
 }
 .img-position {
     left: 50px;
@@ -48,6 +55,9 @@
     z-index: 40;
     right: 0;
     bottom: 50px;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
 }
 
 /*MAIN*/
