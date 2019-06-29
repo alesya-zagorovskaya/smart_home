@@ -12,21 +12,21 @@ body {
 }
 
 /*HEADER*/
+header {
+    height: 785px;
+}
 .yellow-block {
     background-color: rgba(248, 220, 2, 0.7);
 }
 .empty-yellow-block {
     width: 400px;
     height: 400px;
-    position: absolute;
-    z-index: 10;
 }
 .top-block {
+    display: flex;
     position: relative;
 }
 .line-menu {
-    position: absolute;
-    right: 0;
     margin: 15px;
 }
 .line-menu ol li{
@@ -39,28 +39,26 @@ body {
     color: black;
     font-size: 20px;
 }
-.block-main-img {
+.main-img {
     height: 700px;
-    position: absolute;
-    z-index: 20;
+    top: -340px;
+    left: 50px;
 }
 .main-img img {
     height: 100%;
     width: 100%;
 }
+.block-position {
+    position: relative;
+}
 .main-white-bock {
     height: 700px;
     width: 500px;
-    position: absolute;
-    z-index: 30;
     background-color: rgba(255, 255, 255, 0.4);
     font-size: 200px;
     padding: 250px 30px;
-}
-.img-position {
+    top: -1040px;
     left: 50px;
-    top: 50px;
-    right: 50px;
 }
 .letter:hover {
     color: rgba(60, 56, 57, 0.9);
@@ -68,14 +66,39 @@ body {
 .life {
     padding: 10px;
     width: 800px;
-    position: absolute;
-    z-index: 40;
-    right: 0;
-    bottom: 50px;
     font-size: 50px;
     font-weight: 200;
     text-align: center;
+    top: -1130px;
+    float: right;
 }
 
 /*MAIN*/
+.main-circle {
+    border: 1px solid black ;
+    background-image: url("../images/2.png");
+    background-size: 100%;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+
+.tariff-plans {
+    display: flex;
+    margin: 10px 50px;
+}
+.block-tariff {
+    margin: 0 auto;
+    border-right-style: dotted;
+    border-right-color: rgba(248, 220, 2, 0.7);
+    border-right-width: 5px;
+}
+.block-tariff img {
+    height: 100px;
+    margin: 10px 0;
+}
+
 /*FOOTER*/
