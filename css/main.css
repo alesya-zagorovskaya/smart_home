@@ -85,20 +85,66 @@ header {
 }
 
 
-
 .tariff-plans {
     display: flex;
     margin: 10px 50px;
+
 }
 .block-tariff {
-    margin: 0 auto;
+    width: 33.3%;
+    text-align: center;
     border-right-style: dotted;
-    border-right-color: rgba(248, 220, 2, 0.7);
+    border-right-color: rgba(248, 220, 2, 0.5);
     border-right-width: 5px;
+    padding: 0 10px;
+    margin-right: 10px;
 }
-.block-tariff img {
+.block-tariff:last-child {
+    border-right: none;
+}
+.block-tariff:hover {
+    box-shadow: 4px 0 12px rgba(0,0,0,0.3);
+    border: none;
+}
+.block-tariff > img {
     height: 100px;
     margin: 10px 0;
+    background-color: rgba(248, 220, 2, 0.5);
+    border-radius: 15px;
+}
+.block-tariff > img:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.name-tariff-plan {
+    font-size: 24px;
+    font-weight: bold;
+}
+.include-tariff {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top-style: dotted;
+    border-top-color: rgba(248, 220, 2, 0.5);
+    border-top-width: 5px;
+}
+.service-block {
+    width: 130px;
+    padding: 1px 5px;
+    display: flex;
+    margin: 0 auto;
+}
+.img-service-size{
+    width: 35px;
+    height: 35px;
+}
+.img-service img{
+    width: 100%;
+    height: 100%;
+}
+.service-block > p {
+    padding: 10px 0;
+}
+.block-tariff > .service-block {
+    margin-bottom: 10px;
 }
 
 /*FOOTER*/
