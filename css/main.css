@@ -74,21 +74,9 @@ header {
 }
 
 /*MAIN*/
-.main-circle {
-    border: 1px solid black ;
-    background-image: url("../images/2.png");
-    background-size: 100%;
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
-
-
 .tariff-plans {
     display: flex;
     margin: 10px 50px;
-
 }
 .block-tariff {
     width: 33.3%;
@@ -105,6 +93,10 @@ header {
 .block-tariff:hover {
     box-shadow: 4px 0 12px rgba(0,0,0,0.3);
     border: none;
+    padding: 0 10px 0 5px;
+}
+.block-tariff:last-child:hover {
+    padding: 0 5px 0 5px;
 }
 .block-tariff > img {
     height: 100px;
@@ -141,10 +133,17 @@ header {
     height: 100%;
 }
 .service-block > p {
-    padding: 10px 0;
+    padding: 10px 5px;
 }
 .block-tariff > .service-block {
     margin-bottom: 10px;
+}
+.block-choice {
+    display: flex;
+}
+.basket-icon {
+    margin: 80px auto 10px auto;
+
 }
 
 /*FOOTER*/
