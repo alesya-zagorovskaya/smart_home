@@ -84,6 +84,9 @@ header {
     border-right-style: dotted;
     border-right-color: rgba(248, 220, 2, 0.5);
     border-right-width: 5px;
+    border-bottom-style: dotted;
+    border-bottom-color: rgba(248, 220, 2, 0.5);
+    border-bottom-width: 5px;
     padding: 0 10px;
     margin-right: 10px;
 }
@@ -141,9 +144,15 @@ header {
 .block-choice {
     display: flex;
 }
+.block-choice .service-block:hover{
+    box-shadow: 4px 0 12px rgba(0,0,0,0.3);
+   border-radius: 10px;
+    padding: 0 10px 0 5px;
+}
 .basket-icon {
     margin: 80px auto 10px auto;
-
 }
-
+.client-order {
+    margin: 0 auto;
+}
 /*FOOTER*/
