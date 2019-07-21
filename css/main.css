@@ -13,7 +13,7 @@ body {
 
 /*HEADER*/
 header {
-    height: 785px;
+    height: 50px;
 }
 .yellow-block {
     background-color: rgba(248, 220, 2, 0.7);
@@ -21,13 +21,14 @@ header {
 .empty-yellow-block {
     width: 400px;
     height: 400px;
+    position: absolute;
 }
 .top-block {
-    display: flex;
-    position: relative;
+    text-align: right;
 }
 .line-menu {
     margin: 15px;
+    float: right;
 }
 .line-menu ol li{
     display: inline-block;
@@ -39,10 +40,12 @@ header {
     color: black;
     font-size: 20px;
 }
+
+/*MAIN*/
+
 .main-img {
     height: 700px;
-    top: -340px;
-    left: 50px;
+    margin: 0 50px;
 }
 .main-img img {
     height: 100%;
@@ -57,8 +60,8 @@ header {
     background-color: rgba(255, 255, 255, 0.4);
     font-size: 200px;
     padding: 250px 30px;
-    top: -1040px;
-    left: 50px;
+    position: absolute;
+    top: 0;
 }
 .letter:hover {
     color: rgba(60, 56, 57, 0.9);
@@ -69,11 +72,70 @@ header {
     font-size: 50px;
     font-weight: 200;
     text-align: center;
-    top: -1130px;
-    float: right;
+    bottom: 30px;
+    right: -50px;
+    position: absolute;
 }
 
-/*MAIN*/
+.magic-button-home{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin-top: 30%;
+}
+
+.magic-button{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: none;
+}
+
+.scheme{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.magic-text-1, .magic-text-2, .magic-text-3, .magic-text-4, .magic-text-5  {
+    position: absolute;
+}
+
+.magic-text-1 {
+    bottom: calc(100% - 200px);
+    right: calc(100% - 100px);
+}
+
+.magic-text-2 {
+    bottom: calc(100% - 200px);
+    left: calc(100% - 100px);
+}
+
+.magic-text-3 {
+    top: calc(100% - 120px);
+    left: calc(100% - 100px);
+}
+
+.magic-text-4 {
+    top: calc(100% - 120px);
+    right: calc(100% - 100px);
+}
+.magic-text-5 {
+    bottom: calc(100% - 100px);
+    left: calc(50% - 50px);
+
+}
+.description {
+    display: flex;
+}
+.side-description {
+    background-color: lightblue;
+    height: 400px;
+    width: 400px;
+}
+
 .tariff-plans {
     display: flex;
     margin: 10px 50px;
@@ -81,25 +143,24 @@ header {
 .block-tariff {
     width: 33.3%;
     text-align: center;
-    border-right-style: dotted;
-    border-right-color: rgba(248, 220, 2, 0.5);
-    border-right-width: 5px;
-    border-bottom-style: dotted;
-    border-bottom-color: rgba(248, 220, 2, 0.5);
-    border-bottom-width: 5px;
-    padding: 0 10px;
+    border: 1px solid rgb(246,248,247);
     margin-right: 10px;
 }
-.block-tariff:last-child {
-    border-right: none;
+.frame-img {
+    background-color: rgb(246,248,247);
+    padding: 60px 0;
+    width: 100%;
 }
 .block-tariff:hover {
     box-shadow: 4px 0 12px rgba(0,0,0,0.3);
-    border: none;
-    padding: 0 10px 0 5px;
 }
+
+.active, .active:hover {
+    box-shadow: 4px 0 12px rgba(248, 220, 2, 0.7);
+}
+
 .block-tariff:last-child:hover {
-    padding: 0 5px 0 5px;
+    /*padding: 0 5px 0 5px;*/
 }
 .block-tariff > img {
     height: 100px;
@@ -111,16 +172,12 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .name-tariff-plan {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
 }
 .include-tariff {
     margin: 10px 0;
     padding: 10px 0;
-    border-top-style: dotted;
-    border-top-color: rgba(248, 220, 2, 0.5);
-    border-top-width: 5px;
-
 }
 .service-block {
     width: 130px;
@@ -139,36 +196,54 @@ header {
 .service-block > p {
     padding: 10px 5px;
 }
-.block-tariff > .service-block {
+.block-tariff .service-block {
     margin-bottom: 10px;
-}
-.block-choice {
-    display: flex;
+    width: 33.3%;
+    float: left;
 }
 .block-choice .service-block:hover{
     box-shadow: 4px 0 12px rgba(0,0,0,0.3);
     border-radius: 10px;
-    padding: 0 10px 0 5px;
 }
 .basket-icon {
     margin: 80px auto 10px auto;
 }
-
+.my-choice > .service-block {
+    width: 33.3%;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+.tariff-items, .my-choice {
+    padding: 0 30px;
+}
 
 /*FORM*/
 .block-form {
     display: flex;
 }
+.img-form {
+    width: 50%;
+}
 .clients-order {
     background-color: rgba(248, 220, 2, 0.5);
+    width:50%;
 }
+form {
+    width: 515px;
+    margin: 0 auto;
+}
+
 .form-name {
     font-size: 35px;
-    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
 }
 .additional-text-from {
     font-size: 15px;
     margin: 20px 5px;
+    text-align: center;
 }
 label {
     display: block;
@@ -193,16 +268,20 @@ textarea {
 .hidden_err {
     color: red;
     display: none;
-	margin-left: 7px;
-	font-family: "Arial";
-	font-style: italic;
+    margin-left: 7px;
+    font-family: "Arial";
+    font-style: italic;
 }
 .error {
     border-color: #ff4200;
 }
-
+.send-form {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
 /*FOOTER*/
 footer {
-	margin-top: 20px;
-	padding: 20px 10px;
+    margin-top: 20px;
+    padding: 20px 10px;
 }
