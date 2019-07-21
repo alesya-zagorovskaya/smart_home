@@ -120,6 +120,7 @@ header {
     border-top-style: dotted;
     border-top-color: rgba(248, 220, 2, 0.5);
     border-top-width: 5px;
+
 }
 .service-block {
     width: 130px;
@@ -146,13 +147,62 @@ header {
 }
 .block-choice .service-block:hover{
     box-shadow: 4px 0 12px rgba(0,0,0,0.3);
-   border-radius: 10px;
+    border-radius: 10px;
     padding: 0 10px 0 5px;
 }
 .basket-icon {
     margin: 80px auto 10px auto;
 }
-.client-order {
+
+
+/*FORM*/
+.block-form {
+    display: flex;
+}
+.clients-order {
+    background-color: rgba(248, 220, 2, 0.5);
+}
+.form-name {
+    font-size: 35px;
     margin: 0 auto;
 }
+.additional-text-from {
+    font-size: 15px;
+    margin: 20px 5px;
+}
+label {
+    display: block;
+}
+.margin-field {
+    margin: 10px 0;
+}
+.name-field {
+    margin: 1px 7px;
+}
+.field {
+    padding: 5px;
+    border: 1px solid rgba(248, 220, 2, 0.5) ;
+    width: 250px;
+    margin: 0 5px;
+}
+textarea {
+    width: 510px;
+    height: 100px;
+    margin: 10px 5px;
+}
+.hidden_err {
+    color: red;
+    display: none;
+	margin-left: 7px;
+	font-family: "Arial";
+	font-style: italic;
+}
+.error {
+    border-color: #ff4200;
+}
+
 /*FOOTER*/
+footer {
+	margin-top: 20px;
+	padding: 20px 10px;
+}

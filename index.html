@@ -46,66 +46,67 @@
             <img src="images/6.png" alt="Квартира">
             <p class="name-tariff-plan">Квартира</p>
             <div class="include-tariff">Включено в тариф:</div>
-            <div class="service-block">
-                <div class="img-service-size img-service">
-                    <img src="images/Холодильник.png" alt="Холодильник">
-                </div>
-                <p>Холодильник</p>
-            </div>
-            <div class="service-block">
-                <div class="img-service-size img-service">
-                    <img src="images/Стиральная машина.png" alt="Стиральная машина">
-                </div>
-                <p>Стирка</p>
-            </div>
-            <div class="service-block">
-                <div class="img-service-size img-service">
-                    <img src="images/Посудомойка.png" alt="Посудомойка">
-                </div>
-                <p>Посудомойка</p>
-            </div>
-            <div class="service-block">
-                <div class="img-service-size img-service">
-                    <img src="images/Лампочка.png" alt="Лампочка">
-                </div>
-                <p>Лампочка</p>
-            </div>
-            <div class="service-block">
-                <div class="img-service-size img-service">
-                    <img src="images/lcd.png" alt="LCD TV">
-                </div>
-                <p>LCD TV</p>
-            </div>
-            <div class="service-block">
-                <div class="img-service-size img-service">
-                    <img src="images/Компьютер.png" alt="Компьютер">
-                </div>
-                <p>Компьютер</p>
-            </div>
-            <div class="service-block">
-                <div class="img-service-size img-service">
-                    <img src="images/Кондиционер.png" alt="Кондиционер">
-                </div>
-                <p>Кондиционер</p>
-            </div>
-            <div class="service-block">
-                <div class="img-service-size img-service">
-                    <img src="images/Температура.png" alt="Термометр">
-                </div>
-                <p>Температура</p>
-            </div>
-            <div class="service-block">
-                <div class="img-service-size img-service">
-                    <img src="images/Утюг.png" alt="Утюг">
-                </div>
-                <p>Утюг</p>
-            </div>
-            <div class="service-block">
-                <div class="img-service-size img-service">
-                    <img src="images/Фен.png" alt="Фен">
-                </div>
-                <p>Фен</p>
-            </div>
+				<div class="service-block">
+				<div class="img-service-size img-service">
+					<img src="images/Холодильник.png" alt="Холодильник">
+				</div>
+				<p>Холодильник</p>
+			</div>
+			<div class="service-block">
+				<div class="img-service-size img-service">
+					<img src="images/Стиральная машина.png" alt="Стиральная машина">
+				</div>
+				<p>Стирка</p>
+			</div>
+			<div class="service-block">
+				<div class="img-service-size img-service">
+					<img src="images/Посудомойка.png" alt="Посудомойка">
+				</div>
+				<p>Посудомойка</p>
+			</div>
+			<div class="service-block">
+				<div class="img-service-size img-service">
+					<img src="images/Лампочка.png" alt="Лампочка">
+				</div>
+				<p>Лампочка</p>
+			</div>
+			<div class="service-block">
+				<div class="img-service-size img-service">
+					<img src="images/lcd.png" alt="LCD TV">
+				</div>
+				<p>LCD TV</p>
+			</div>
+			<div class="service-block">
+				<div class="img-service-size img-service">
+					<img src="images/Компьютер.png" alt="Компьютер">
+				</div>
+				<p>Компьютер</p>
+			</div>
+			<div class="service-block">
+				<div class="img-service-size img-service">
+					<img src="images/Кондиционер.png" alt="Кондиционер">
+				</div>
+				<p>Кондиционер</p>
+			</div>
+			<div class="service-block">
+				<div class="img-service-size img-service">
+					<img src="images/Температура.png" alt="Термометр">
+				</div>
+				<p>Температура</p>
+			</div>
+			<div class="service-block">
+				<div class="img-service-size img-service">
+					<img src="images/Утюг.png" alt="Утюг">
+				</div>
+				<p>Утюг</p>
+			</div>
+			<div class="service-block">
+				<div class="img-service-size img-service">
+					<img src="images/Фен.png" alt="Фен">
+				</div>
+				<p>Фен</p>
+			</div>
+		
         </div>
         <div class="block-tariff">
             <img src="images/9.png" alt="Дом">
@@ -293,23 +294,59 @@
             </div>
         </div>
     </div>
-    <form class="clients-order">
-        <input type="text">
-        <input type="text">
-        <select>
-            <option>
-            </option>
-            <option>
-            </option>
-            <option>
-            </option>
-        </select>
-        <textarea></textarea>
-    </form>
-
+    <div class="block-form">
+        <!--<div>
+            <img src="images/form2n.jpg" alt="Light">
+        </div>-->
+        <div class="clients-order">
+            <form name="form_private" id="form_private">
+                <div class="form-name">Свяжитесь с нами</div>
+                <div class="additional-text-from">Заполните, пожалуйста, форму обратной связи</div>
+                <div class="block-form margin-field">
+                    <div>
+                        <label class="name-field">Имя</label>
+                        <input type="text" class="field" name="contact">
+						<span class="hidden_err" id="hidden_contact">Введите имя</span>
+                    </div>
+                    <div>
+                        <label class="name-field">Город</label>
+                        <input type="text" class="field" name="city">
+						<span class="hidden_err" id="hidden_city">Введите населенный пункт</span>
+                    </div>
+                </div>
+                <div class="block-form margin-field">
+                    <div>
+                        <label class="name-field">Тарифный план</label>
+                        <select class="field">
+                            <option>Выбрать
+                            </option>
+                            <option>Квартира
+                            </option>
+                            <option>Дом
+                            </option>
+                            <option>Мой выбор
+                            </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="name-field">Телефон</label>
+                        <input type="text" class="field" name="phone" placeholder="+375(  ) ___-__-__">
+						<span class="hidden_err" id="hidden_phone">Введите номер телефона</span>
+                    </div>
+                </div>
+                <label class="name-field">Ваш комментарий</label>
+                <textarea></textarea>
+                <br>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 </main>
 <footer>
-
+© 2019 Smart Home. Все права защищены.
 </footer>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
