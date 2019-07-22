@@ -37,7 +37,7 @@ jQuery(function($) {
         $('.' + showBox).hide().text(text).show();
     });
 
-    $('.tariff-items').on('click', '.service-block', function () {
+    $('.block-choice .tariff-items').on('click', '.service-block', function () {
         $(this).hide(700);
         var newObject = $(this).clone().attr('style', '');
         $('.my-choice').append(newObject);

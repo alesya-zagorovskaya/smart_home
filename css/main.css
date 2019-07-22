@@ -97,7 +97,8 @@ header {
     width: 150px;
     height: 150px;
     cursor: pointer;
-    margin-top: 30%;
+    margin-top: 20%;
+    margin-right: 4%;
 }
 
 .magic-button{
@@ -108,12 +109,13 @@ header {
 }
 
 .scheme{
-    width: 400px;
+    width: 650px;
     height: 400px;
     position: relative;
     margin: auto;
     text-align: center;
-    background-image: url("../images/click.jpg");
+    background-image: url("../images/buttom.jpg");
+    background-size: cover;
 }
 
 .magic-text-1, .magic-text-2, .magic-text-3, .magic-text-4, .magic-text-5  {
@@ -148,14 +150,14 @@ header {
     display: flex;
 }
 .side-description {
-    background-color: lightblue;
     height: 400px;
-    width: 400px;
+    width: 467px;
+    background-image: url("../images/buttom.jpg");
 }
 
 .tariff-plans {
     display: flex;
-    margin: 10px 50px;
+    margin: 50px;
 }
 .block-tariff {
     width: 33.3%;
@@ -165,7 +167,7 @@ header {
 }
 .frame-img {
     background-color: rgb(246,248,247);
-    padding: 60px 0;
+    padding: 40px 0;
     width: 100%;
 }
 .block-tariff:hover {
@@ -309,5 +311,7 @@ textarea {
 /*FOOTER*/
 footer {
     margin-top: 20px;
-    padding: 20px 10px;
+    padding: 20px 0;
+    text-align: center;
 }
+
