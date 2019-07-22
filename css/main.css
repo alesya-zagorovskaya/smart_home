@@ -76,7 +76,23 @@ header {
     right: -50px;
     position: absolute;
 }
-
+#counter {
+    display: flex;
+    margin: 30px 0;
+}
+.number, .text {
+   text-align: center;
+    font-size: 30px;
+}
+.text {
+    margin: 10px 0;
+}
+.block-count {
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 200px;
+    height: 125px;
+}
 .magic-button-home{
     width: 150px;
     height: 150px;

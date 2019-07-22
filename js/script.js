@@ -57,9 +57,36 @@ jQuery(function($) {
         console.log($(this).data("tariff"));
         $('#choice_tariff').val($(this).data("tariff"));
     });
+    var time = 2, CC = 1;
+    $(window).scroll(function(){
+    $('#counter').each(function(){
+        var cPos = $(this).offset().top,
+            topWindow = $(window).scrollTop();
+        if (cPos < topWindow + 500) {
+            if (CC < 2) {
+                $('div').each(function(){
+                    var
+                        i = 1,
+                        num = $(this).data('num'),
+                        step = 1000 * time / num,
+                        that = $(this),
+                        int = setInterval(function(){
+                            if (i <= num) {
+                                that.html(i);
+                            }
+                            else {
+                                CC = CC + 2;
+                                clearInterval(int);
+                            }
+                            i++;
+                        },step);
+                    });
+                }
+            }
+        });
 
+    });
 });
-
 
 function hideText() {
     $('.side-right').text('');
