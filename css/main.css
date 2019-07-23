@@ -177,7 +177,6 @@ header {
     margin-right: 10px;
 }
 .frame-img {
-    background-color: rgb(246,248,247);
     padding: 40px 0;
     width: 100%;
 }
@@ -264,10 +263,10 @@ header {
     box-shadow: 4px 0 12px grey;
     margin: 20px auto;
     text-align: center;
+    transition: 0.5s;
 }
 .block-advantage:hover {
     transform: scale(1.1);
-    transition: 0.5s;
 }
 .advantage-1 {
     background-image: url("../images/advantage1.jpg");

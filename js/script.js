@@ -17,6 +17,18 @@ jQuery(function($) {
         }
     });
 
+    $('.line-menu a').on( 'click', function(){
+        var el = $(this);
+        var dest = el.attr('href'); // получаем направление
+        if(dest !== undefined && dest !== '') { // проверяем существование
+            $('html').animate({
+                    scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+                }, 1500 // скорость прокрутки
+            );
+        }
+        return false;
+    });
+
     $('.magic-button-home').on('click', function () {
         $('.magic-button').each(function () {
 
