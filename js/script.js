@@ -6,7 +6,8 @@ jQuery(function($) {
             return false; // прерываем выполнение скрипта
         }
         else {
-            alert("Данные успешно отправлены");
+            $("#form_private").html("Данные успешно отправлены");
+            $("#form_private").css("padding-top", "210px");
         }
     });
 
@@ -19,11 +20,11 @@ jQuery(function($) {
 
     $('.line-menu a').on( 'click', function(){
         var el = $(this);
-        var dest = el.attr('href'); // получаем направление
-        if(dest !== undefined && dest !== '') { // проверяем существование
+        var dest = el.attr('href');
+        if(dest !== undefined && dest !== '') {
             $('html').animate({
-                    scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
-                }, 1500 // скорость прокрутки
+                    scrollTop: $(dest).offset().top
+                }, 1500
             );
         }
         return false;
@@ -107,6 +108,10 @@ function hideText() {
 
 function sendForm() {
     var result=true;
+    $("#hidden_contact").hide();
+    $("#hidden_city").hide();
+    $("#hidden_tariff").hide();
+    $("#hidden_phone").hide();
 
     //Проверка имени
     var name=$("input[name=contact]");
@@ -121,6 +126,13 @@ function sendForm() {
     if (city.val()=="") {
         $("#hidden_city").show();
         city.addClass("error");
+        result=false;
+    }
+    //Проверка тарифного плана
+    var tariff=$("#choice_tariff");
+    if (tariff.val()=="") {
+        $("#hidden_tariff").show();
+        tariff.addClass("error");
         result=false;
     }
 
