@@ -401,7 +401,7 @@ footer {
 
 @media (max-width: 1300px) {
     .line-menu ol li {
-        padding-right: 20px;
+        padding-right: 8px;
     }
     .main-white-bock {
         padding: 50px;
@@ -442,7 +442,10 @@ footer {
 
 @media (max-width: 600px) {
     .line-menu ol li {
-        padding-right: 4px;
+        padding-right: 0px;
+    }
+    .line-menu a {
+        padding:0 2px;
     }
     .main-img {
         height: 530px;
