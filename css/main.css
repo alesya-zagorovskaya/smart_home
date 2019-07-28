@@ -49,6 +49,16 @@ header {
 }
 
 /*MAIN*/
+.button-up {
+    position: fixed;
+    background-image: url("../images/up-arrow.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1000;
+}
 
 .main-img {
     height: 700px;

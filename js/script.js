@@ -18,6 +18,8 @@ jQuery(function($) {
         }
     });
 
+    $(".button-up").on('click', window.scrollTop(0,0));
+
     $('.line-menu a').on( 'click', function(){
         var el = $(this);
         var dest = el.attr('href');
@@ -81,7 +83,7 @@ jQuery(function($) {
                     var
                         i = 1,
                         num = $(this).data('num'),
-                        step = 1000 * time / num,
+                        step = 1500 * time / num,
                         that = $(this),
                         int = setInterval(function(){
                             if (i <= num) {
