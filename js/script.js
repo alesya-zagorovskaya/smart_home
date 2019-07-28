@@ -18,7 +18,7 @@ jQuery(function($) {
         }
     });
 
-    $(".button-up").on('click', window.scrollTop(0,0));
+    $(".button-up").on('click', window.scrollTo(0,0));
 
     $('.line-menu a').on( 'click', function(){
         var el = $(this);
