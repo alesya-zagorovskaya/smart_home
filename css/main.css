@@ -483,6 +483,7 @@ footer {
         width: 230px;
     }
     textarea {
+        float: left;
         width: 469px;
     }
 
