@@ -326,7 +326,7 @@ header {
     font-size: 25px;
 }
 .advantage-description {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin-bottom: 20px;
 }
 
@@ -387,7 +387,7 @@ textarea {
     color: rgb(85,107,47);
     display: none;
     margin-left: 7px;
-    font-family: "Arial";
+    font-family: Arial, sans-serif;
     font-style: italic;
 }
 .error {
@@ -453,7 +453,7 @@ footer {
 
 @media (max-width: 600px) {
     .line-menu ol li {
-        padding-right: 0px;
+        padding-right: 0;
     }
     .line-menu a {
         padding:0 2px;

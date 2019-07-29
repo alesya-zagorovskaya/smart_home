@@ -6,8 +6,8 @@ jQuery(function($) {
             return false; // прерываем выполнение скрипта
         }
         else {
-            $("#form_private").html("Данные успешно отправлены");
-            $("#form_private").css("padding-top", "210px");
+            $('#form_private').html("Данные успешно отправлены");
+            $('#form_private').css("padding-top", "210px");
         }
     });
 
@@ -49,7 +49,7 @@ jQuery(function($) {
     $('.magic-button-home').on('click', function () {
         $('.magic-button').each(function () {
 
-            var value = $(this).css('display');
+           var value = $(this).css('display');
             if(value == 'none') {
                 $(this).show(700);
             } else {
