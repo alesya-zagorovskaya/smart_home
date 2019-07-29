@@ -120,6 +120,17 @@ header {
     cursor: pointer;
     margin-top: 25%;
     margin-right: 4%;
+    animation: scale 0.9s infinite;
+    transform: scale(1);
+    animation-direction: alternate;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 .magic-button{
@@ -129,6 +140,7 @@ header {
     display: none;
     margin: -15px;
 }
+
 .magic-button-home:hover, .magic-button:hover {
     transform: scale(1.1);
     transition: 0.5s;
@@ -389,7 +401,6 @@ textarea {
     background-color: white;
 }
 #form_private {
-    height: 410px;
     text-align: center;
 }
 /*FOOTER*/
