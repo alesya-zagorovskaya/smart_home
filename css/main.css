@@ -27,6 +27,11 @@ header {
 .top-block {
     text-align: right;
 }
+.top-block:after {
+    clear: both;
+    content: "";
+    display: block;
+}
 .line-menu {
     margin: 15px;
     float: right;
@@ -41,11 +46,12 @@ header {
     color: black;
     font-size: 20px;
     padding: 0 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(248, 220, 2, 0);
 }
 .line-menu a:hover {
     border: 1px solid rgba(248, 220, 2, 0.7);
-    border-radius: 20px;
-    padding: 0 9px;
+
 }
 
 /*MAIN*/
@@ -147,7 +153,7 @@ header {
 }
 
 .scheme{
-    width: 650px;
+    width: 40%;
     height: 400px;
     position: relative;
     margin: auto;
@@ -189,7 +195,7 @@ header {
 }
 .side-description {
     height: 400px;
-    width: 467px;
+    width: 30%;
     background-image: url("../images/buttom.jpg");
 }
 .side-left, .side-right {
@@ -449,9 +455,13 @@ footer {
     .magic-button-home {
         margin-top: 33%;
     }
+    .main-img { margin: 0 20px;}
 }
 
 @media (max-width: 600px) {
+    .line-menu {
+        margin: 10px;
+    }
     .line-menu ol li {
         padding-right: 0;
     }
@@ -460,6 +470,7 @@ footer {
     }
     .main-img {
         height: 530px;
+
     }
     .main-white-bock {
         height: 530px;
